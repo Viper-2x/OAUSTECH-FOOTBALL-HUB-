@@ -1389,3 +1389,268 @@ footer p:first-child {
     box-shadow:
         0 10px 30px rgba(34, 197, 94, 0.3);
 }
+/* =========================================
+   TEAMS PAGE
+========================================= */
+
+.teams-page {
+
+    min-height: 100vh;
+
+    padding-bottom: 80px;
+
+    background:
+        rgba(0, 15, 8, 0.35);
+
+    backdrop-filter: blur(8px);
+
+}
+
+
+.teams-section {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 40px 20px;
+
+}
+
+
+.teams-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+/* TEAM CARD */
+
+.team-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    background:
+        rgba(255, 255, 255, 0.1);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(15px);
+
+    transition: 0.3s;
+
+}
+
+
+.team-card:hover {
+
+    transform: translateY(-8px);
+
+    background:
+        rgba(255, 255, 255, 0.15);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.3);
+
+}
+
+
+/* TEAM LOGO */
+
+.team-logo {
+
+    min-width: 75px;
+
+    height: 75px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 22px;
+
+    font-weight: 900;
+
+    border:
+        3px solid rgba(255, 255, 255, 0.4);
+
+}
+
+
+/* TEAM LOGO STYLES */
+
+.arsenal {
+
+    background: #b91c1c;
+
+}
+
+
+.chelsea {
+
+    background: #1d4ed8;
+
+}
+
+
+.madrid {
+
+    background: #f8fafc;
+
+    color: #1e3a8a;
+
+}
+
+
+.barcelona {
+
+    background:
+        linear-gradient(
+            90deg,
+            #7f1d1d 50%,
+            #1e3a8a 50%
+        );
+
+}
+
+
+.city {
+
+    background: #38bdf8;
+
+    color: #075985;
+
+}
+
+
+.united {
+
+    background: #dc2626;
+
+}
+
+
+.oaustech {
+
+    background: #166534;
+
+}
+
+
+/* TEAM INFORMATION */
+
+.team-info {
+
+    flex: 1;
+
+}
+
+
+.team-info .league {
+
+    color: #4ade80;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+
+.team-info h3 {
+
+    font-size: 20px;
+
+    margin: 7px 0;
+
+}
+
+
+.team-info p {
+
+    color:
+        rgba(255, 255, 255, 0.55);
+
+    font-size: 13px;
+
+}
+
+
+/* VIEW TEAM */
+
+.team-btn {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #4ade80;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.team-btn:hover {
+
+    color: white;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .teams-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .teams-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .team-card {
+
+        padding: 20px;
+
+    }
+
+}
