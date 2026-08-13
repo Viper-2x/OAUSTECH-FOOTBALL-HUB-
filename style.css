@@ -1361,3 +1361,31 @@ footer p:first-child {
     }
 
 }
+/* READ STORY BUTTON */
+
+.read-story-btn {
+    background: #22c55e;
+    color: #ffffff;
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.read-story-btn:hover {
+    background: #16a34a;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 30px rgba(34, 197, 94, 0.3);
+}
